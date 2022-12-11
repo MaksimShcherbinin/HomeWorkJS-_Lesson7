@@ -36,6 +36,10 @@
         свойство classList у элементов.
          */
 
+        const dropdownItemEls = document.querySelectorAll('.dropdown-item');
+        dropdownItemEls.forEach(element => {
+            element.classList = 'dropdown-item super-dropdown';
+        });
 
         /*
         2. У элемента с классом btn необходимо убрать класс "btn-secondary", если он

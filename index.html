@@ -37,9 +37,14 @@
          */
 
         const dropdownItemEls = document.querySelectorAll('.dropdown-item');
-        dropdownItemEls.forEach(element => {
-            element.classList = 'dropdown-item super-dropdown';
-        });
+
+        const addClass = (nodeList, newClass) => {
+            nodeList.forEach(element => {
+                element.classList.add(newClass);
+            });
+        };
+
+        addClass(dropdownItemEls, 'super-dropdown');
 
         /*
         2. У элемента с классом btn необходимо убрать класс "btn-secondary", если он

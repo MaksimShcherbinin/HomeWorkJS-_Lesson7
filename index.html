@@ -62,6 +62,7 @@
          */
 
         const menuEl = document.querySelector('.menu');
+
         menuEl.classList.remove('dropdown-menu');
 
         /*
@@ -70,6 +71,9 @@
           <a href="#">link</a>
          */
 
+        const divEl = document.querySelector('div.dropdown');
+
+        divEl.insertAdjacentHTML('afterend', '<a href="#">link</a>');
 
         /*
         5. У элемента с id "dropdownMenuButton" замените id на "superDropdown".
